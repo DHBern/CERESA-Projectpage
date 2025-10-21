@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@import 'tailwindcss';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton-svelte';
+@import '@skeletonlabs/skeleton/themes/cerberus';
+
+h1, h2, h3 {
+    @apply mb-5
+}
+
+p {
+    @apply mb-5
+}
