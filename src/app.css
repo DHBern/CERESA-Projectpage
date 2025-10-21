@@ -6,8 +6,14 @@
 @import '@skeletonlabs/skeleton';
 @import '@skeletonlabs/skeleton-svelte';
 @import '@skeletonlabs/skeleton/themes/cerberus';
+@import '@skeletonlabs/skeleton/themes/catppuccin';
+@import '@skeletonlabs/skeleton/themes/vox';
+@import '@skeletonlabs/skeleton/themes/wintry';
 
-h1, h2, h3 {
+h1 {
+    @apply mb-5 mt-15
+}
+h2 {
     @apply mb-5
 }
 
