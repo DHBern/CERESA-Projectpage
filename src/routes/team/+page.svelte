@@ -1,8 +1,8 @@
 <h1 class="h1">Team</h1>
 
-<div class="flex flex-wrap gap-10">
+<div class="mt-10 flex flex-wrap gap-10">
 	<div class="flex items-end gap-4">
-		<img class="h-70" src="/images/portrait-lp.webp" alt="" />
+		<img class="h-70" src="/images/portrait-gc.webp" alt="" />
 		<p class="w-90">
 			<span class="font-bold">Prof. Dr. Giovanna Cordibella</span><br />
 			<span class="">Co-direttrice del progetto</span><br />
@@ -13,7 +13,7 @@
 	</div>
 
 	<div class="flex items-end gap-4">
-		<img class="h-70" src="/images/portrait-lp.webp" alt="" />
+		<img class="h-70" src="/images/portrait-tc.webp" alt="" />
 		<p class="w-90">
 			<span class="font-bold">Prof. Dr. Tatiana Crivelli</span><br />
 			<span class="">Co-direttrice del progetto</span><br />
@@ -22,9 +22,11 @@
 			<a href="">Pagina professionale</a>
 		</p>
 	</div>
+</div>
 
+<div class="mt-10 flex flex-wrap gap-10">
 	<div class="flex items-end gap-4">
-		<img class="h-70" src="/images/portrait-lp.webp" alt="" />
+		<img class="h-70" src="/images/portrait-am.webp" alt="" />
 		<p class="w-90">
 			<span class="font-bold">Dr. des. Alessandro Moro</span><br />
 			<span>Postdoc - Università di Berna</span><br />
@@ -35,7 +37,7 @@
 	</div>
 
 	<div class="flex items-end gap-4">
-		<img class="h-70" src="/images/portrait-lp.webp" alt="" />
+		<img class="h-70" src="/images/portrait-en.webp" alt="" />
 		<p class="w-90">
 			<span class="font-bold">Dr. Eleonora Norcini</span><br />
 			<span>Postdoc - Università di Zurigo</span><br />
@@ -44,7 +46,9 @@
 			<a href="">Pagina professionale</a>
 		</p>
 	</div>
+</div>
 
+<div class="mt-10 flex flex-wrap gap-10">
 	<div class="flex items-end gap-4">
 		<img class="h-70" src="/images/portrait-lp.webp" alt="" />
 		<p class="w-90">
@@ -57,7 +61,7 @@
 	</div>
 
 	<div class="flex items-end gap-4">
-		<img class="h-70" src="/images/portrait-lp.webp" alt="" />
+		<img class="h-70" src="/images/portrait-ev.webp" alt="" />
 		<p class="w-90">
 			<span class="font-bold">Eva Vanacore</span><br />
 			<span>Dottoranda - Università di Zurigo </span><br />
@@ -66,9 +70,11 @@
 			<a href="">Pagina professionale</a>
 		</p>
 	</div>
+</div>
 
+<div class="mt-10 flex flex-wrap gap-10">
 	<div class="flex items-end gap-4">
-		<img class="h-70" src="/images/portrait-lp.webp" alt="" />
+		<img class="h-70" src="/images/portrait-td.webp" alt="" />
 		<p class="w-90">
 			<span class="font-bold">Tabatha Dattrino</span><br />
 
@@ -76,9 +82,11 @@
 			<a href="">Pagina professionale</a>
 		</p>
 	</div>
+</div>
 
+<div class="mt-10 flex flex-wrap gap-10">
 	<div class="flex items-end gap-4">
-		<img class="h-70" src="/images/portrait-lp.webp" alt="" />
+		<img class="h-70" src="/images/portrait-lb.webp" alt="" />
 		<p class="w-90">
 			<span class="font-bold">Levyn Bürki</span><br />
 			<span>Sviluppo e supporto tecnico</span><br />
@@ -89,7 +97,7 @@
 	</div>
 
 	<div class="flex items-end gap-4">
-		<img class="h-70" src="/images/portrait-lp.webp" alt="" />
+		<img class="h-70" src="/images/portrait-pd.webp" alt="" />
 		<p class="w-90">
 			<span class="font-bold">Peter Dängeli</span><br />
 			<span>Sviluppo e supporto tecnico</span><br />
