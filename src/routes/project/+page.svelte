@@ -1,10 +1,11 @@
 <script>
 	import { m } from '$lib/paraglide/messages';
+	import { base } from '$app/paths';
 </script>
 
 <h1 id="descrizione" class="h1">{@html m.project_title_1()}</h1>
 
-<img class="my-1 h-120" src="/images/ceresa-cane.webp" alt={m.weak_arable_skate_clip()} />
+<img class="my-1 h-120" src={`${base}/images/ceresa-cane.webp`} alt={m.weak_arable_skate_clip()} />
 <p class="text-xs">{m.same_loose_orangutan_rest()}</p>
 
 {@html m.project_description_text()}
