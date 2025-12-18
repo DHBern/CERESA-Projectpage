@@ -50,10 +50,12 @@
 								>
 								<Portal>
 									<Menu.Positioner>
-										<Menu.Content class="mt-1 rounded-none border-0 bg-secondary-50 p-0 text-xl">
+										<Menu.Content
+											class="mt-1 rounded-none border-0 bg-secondary-50 p-0 py-2 text-xl"
+										>
 											{#each contents as content, idx}
-												<a href={content.slug} class="p-4">
-													<Menu.Item value={`i_${idx}`}>
+												<a href={content.slug}>
+													<Menu.Item value={`i_${idx}`} class="px-4">
 														<Menu.ItemText>{@html content.name}</Menu.ItemText>
 													</Menu.Item>
 												</a>
