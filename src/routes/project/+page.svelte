@@ -1,19 +1,28 @@
 <script>
 	import { m } from '$lib/paraglide/messages';
 	import { base } from '$app/paths';
+
+	import { ChevronDownIcon } from '@lucide/svelte';
+	import { Accordion } from '@skeletonlabs/skeleton-svelte';
 </script>
 
-<h1 id="descrizione" class="h1">{@html m.project_title_1()}</h1>
-
-<img class="my-1 h-120" src={`${base}/images/ceresa-cane.webp`} alt={m.weak_arable_skate_clip()} />
-<p class="text-xs">{m.same_loose_orangutan_rest()}</p>
+<h1 class="h1">{m.drab_aware_grizzly_inspire()}</h1>
+<h2 class="h2">{m.mellow_stock_bobcat_clap()}</h2>
 
 {@html m.project_description_text()}
+<figure class="my-15">
+	<img
+		class="my-1 h-120"
+		src={`${base}/images/ceresa-cane.webp`}
+		alt={m.weak_arable_skate_clip()}
+	/>
+	<figcaption class="text-md">{m.same_loose_orangutan_rest()}</figcaption>
+</figure>
 
-<h1 id="cooperazioni" class="h1">{@html m.project_cooperation_title()}</h1>
-<h2 class="h2">{@html m.dsl_title()}</h2>
+<!-- <h3 id="cooperazioni" class="h3">{@html m.project_cooperation_title()}</h3>
+<h4 class="h4">{@html m.dsl_title()}</h4>
 {@html m.dsl_text()}
 
-<h2 class="h2">{@html m.asl_title()}</h2>
+<h4 class="h4">{@html m.asl_title()}</h4>
 
-{@html m.asl_text()}
+{@html m.asl_text()} -->
