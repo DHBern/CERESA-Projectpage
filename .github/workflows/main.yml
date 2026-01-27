@@ -33,6 +33,9 @@ jobs:
         with:
           # this should match the `pages` option in your adapter-static options
           path: 'build/'
+          
+      - name: Bypass Jekyll (else directories starting with an underscore end up with an erroneous MIME type)
+        run: touch build/.nojekyll
 
   deploy:
     needs: build_site
