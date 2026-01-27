@@ -27,15 +27,15 @@ jobs:
           NODE_OPTIONS: '--max_old_space_size=9000'
         run: |
           npm run build
-
+  
+      - name: Bypass Jekyll (else directories starting with an underscore end up with an erroneous MIME type)
+        run: touch build/.nojekyll
+        
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
           # this should match the `pages` option in your adapter-static options
           path: 'build/'
-          
-      - name: Bypass Jekyll (else directories starting with an underscore end up with an erroneous MIME type)
-        run: touch build/.nojekyll
 
   deploy:
     needs: build_site
