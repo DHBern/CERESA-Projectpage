@@ -23,10 +23,9 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
+          BASE_PATH: ${{ github.ref == 'refs/heads/main' && '' || format('/{0}', github.event.repository.name) }}
           NODE_OPTIONS: '--max_old_space_size=9000'
-        run: |
-          npm run build
+        run: npm run build
   
       - name: Bypass Jekyll (else directories starting with an underscore end up with an erroneous MIME type)
         run: touch build/.nojekyll
