@@ -8,6 +8,7 @@ on:
 jobs:
   build_site:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -21,19 +22,34 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: build
+      - name: Build
         env:
-          BASE_PATH: ${{ github.ref == 'refs/heads/main' && '' || format('/{0}', github.event.repository.name) }}
+          # ------------------------------------------------------------------
+          # Deployment mode toggle
+          #
+          # USE_REPO_BASE = 'false'
+          #   → Custom domain (site served at '/')
+          #
+          # USE_REPO_BASE = 'true'
+          #   → Default GitHub Pages URL
+          #      https://username.github.io/<repo>
+          #
+          # To switch back to default GitHub Pages hosting,
+          # change this value to 'true'.
+          # ------------------------------------------------------------------
+          USE_REPO_BASE: 'false'
+
           NODE_OPTIONS: '--max_old_space_size=9000'
         run: npm run build
-  
-      - name: Bypass Jekyll (else directories starting with an underscore end up with an erroneous MIME type)
+
+      - name: Bypass Jekyll
+        # Prevents MIME type issues with _app folder
         run: touch build/.nojekyll
-        
+
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          # this should match the `pages` option in your adapter-static options
+          # Must match adapter-static "pages" directory
           path: 'build/'
 
   deploy:
