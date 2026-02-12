@@ -42,10 +42,6 @@ jobs:
           NODE_OPTIONS: '--max_old_space_size=9000'
         run: npm run build
 
-      - name: Bypass Jekyll
-        # Prevents MIME type issues with _app folder
-        run: touch build/.nojekyll
-
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
