@@ -1,10 +1,26 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-const repo = 'CERESA-Projectpage';
+/**
+ * Repo name is automatically derived from:
+ *   owner/repo
+ * Example:
+ *   "myuser/CERESA-Projectpage" → "CERESA-Projectpage"
+ */
+const repo =
+	process.env.GITHUB_REPOSITORY?.split('/')[1] ?? '';
 
+/**
+ * Deployment mode:
+ *   USE_REPO_BASE = 'true'  → site served at '/<repo>'
+ *   USE_REPO_BASE = 'false' → site served at '/'
+ *
+ * Default is root ('') for:
+ *   - local dev
+ *   - custom domain deployments
+ */
 const base =
-	process.env.GITHUB_PAGES === 'true'
+	process.env.USE_REPO_BASE === 'true' && repo
 		? `/${repo}`
 		: '';
 
