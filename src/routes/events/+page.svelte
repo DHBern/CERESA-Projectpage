@@ -2,7 +2,7 @@
 	import { m } from '$lib/paraglide/messages';
 </script>
 
-<h1 class="h1">Attività</h1>
+<h1 class="h1">{m.sea_misty_snail_hunt()}</h1>
 
 <ul class="eventlist">
 	<li class="mb-15">
