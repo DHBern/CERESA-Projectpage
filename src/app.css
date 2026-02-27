@@ -9,7 +9,6 @@
 @import '@skeletonlabs/skeleton/themes/wintry';
 @import '../theme_ceresa';
 
-
 *:focus {
     @apply ring-2 ring-secondary-200;
     outline: none; /* Overwrite default focus-marker */}

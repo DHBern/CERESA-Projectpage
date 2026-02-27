@@ -187,7 +187,7 @@
 		</AppBar.Trail>
 	</AppBar.Toolbar>
 </AppBar>
-<div class="mx-auto min-h-[90vh] w-full max-w-300 grow p-10 py-20">
+<div class="mx-auto min-h-[90vh] w-full max-w-350 grow p-10 py-20">
 	{@render children?.()}
 </div>
 <!-- <div class="flex min-h-30 w-full flex-wrap gap-10 bg-surface-700 p-10">
