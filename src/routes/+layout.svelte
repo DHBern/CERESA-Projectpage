@@ -197,10 +197,10 @@
 		alt="Signatura di Alice Ceresa"
 	/>
 </div> -->
-<div class="min-h-30 gap-10 bg-surface-200 border-t-6 border-t-secondary-500 p-10">
+<div class="min-h-30 gap-2 bg-surface-200 border-t-6 border-t-secondary-500 p-10">
 	<div class="mx-auto w-full lg:max-w-6/10">
 		<p class="text-center text-surface-800">{m.green_moving_snake_gaze()}:</p>
-		<div class="mt-20 flex flex-wrap justify-around gap-10">
+		<div class="mt-8 flex flex-wrap justify-around gap-10">
 			<div class="">
 				<img
 					class="mx-auto h-20"
