@@ -124,7 +124,7 @@
 						<Dialog.Backdrop class="fixed inset-0 z-50 bg-black/50" />
 						<Dialog.Positioner class="fixed inset-0 z-50">
 							<Dialog.Content
-								class="relative h-full w-full overflow-auto bg-secondary-200 p-3 text-surface-900"
+								class="relative h-full w-screen overflow-auto bg-secondary-200 p-3 text-surface-900"
 							>
 								<!-- Top bar with title and close in top-right -->
 								<div class="flex items-center justify-between">
