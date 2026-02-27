@@ -11,11 +11,18 @@
 	let openStateMenu = $state(false);
 </script>
 
+<!-- <img
+	class="h-20"
+	src={`${base}/images/ceresa-firma-transparent.webp`}
+	alt="Signatura di Alice Ceresa"
+/> -->
+
+
 <!-- Menu -->
 <AppBar
-	class="flex items-center justify-between gap-10 bg-surface-700 p-2 px-10 py-0 text-xl text-surface-200"
+	class="flex items-center justify-around gap-10 bg-primary-500 p-2 py-0 text-lg text-surface-200"
 >
-	<AppBar.Toolbar class="flex">
+	<AppBar.Toolbar class="flex my-1">
 		<!-- Logo / Home -->
 		<AppBar.Lead class="m-0 flex items-center p-0">
 			<!-- <a href={`${base}/.`}
@@ -31,7 +38,7 @@
 		<AppBar.Headline class="m-0 w-full">
 			<nav class="">
 				<ul
-					class="my-8{m.north_glad_slug_learn()} hidden w-full items-start gap-x-12 gap-y-6 text-xl text-surface-50 lg:flex lg:flex-wrap lg:justify-between"
+					class="my-8{m.north_glad_slug_learn()} hidden w-full items-start gap-x-12 gap-y-6 text-lg text-surface-50 lg:flex lg:flex-wrap lg:justify-between"
 				>
 					{#snippet menuItemTopDropdown(name, contents)}
 						<li
@@ -51,7 +58,7 @@
 								<Portal>
 									<Menu.Positioner>
 										<Menu.Content
-											class="mt-1 rounded-none border-0 bg-secondary-50 p-0 py-2 text-xl"
+											class="mt-1 rounded-none border-0 bg-secondary-50 p-0 py-2 text-lg"
 										>
 											{#each contents as content, idx}
 												<a href={content.slug}>
@@ -83,7 +90,6 @@
 						{ name: 'Arcipelago Ceresa', slug: `${base}/project` },
 						{ name: m.north_glad_slug_learn(), slug: `${base}/cooperations` }
 					])}
-					{@render menuItemTopH1(`${m.fresh_sad_lemur_achieve()}_2`, `${base}/project2`)}
 					{@render menuItemTopH1(m.aqua_simple_hyena_snip(), `${base}/edition`)}
 					{@render menuItemTopH1('Alice Ceresa', `${base}/ceresa`)}
 					{@render menuItemTopH1('Team', `${base}/team`)}
@@ -118,7 +124,7 @@
 						<Dialog.Backdrop class="fixed inset-0 z-50 bg-black/50" />
 						<Dialog.Positioner class="fixed inset-0 z-50">
 							<Dialog.Content
-								class="relative h-full w-full overflow-auto bg-surface-700 p-3 text-surface-50"
+								class="relative h-full w-full overflow-auto bg-secondary-200 p-3 text-surface-900"
 							>
 								<!-- Top bar with title and close in top-right -->
 								<div class="flex items-center justify-between">
@@ -126,14 +132,14 @@
 
 									<div class="flex">
 										<button
-											class="font-bold"
+											class="font-bold text-lg"
 											onclick={() => {
 												getLocale() === 'it' ? setLocale('en') : setLocale('it');
 											}}>{getLocale() === 'it' ? 'English' : 'Italiano'}</button
 										>
 										<!-- Close button top-right -->
 										<Dialog.CloseTrigger
-											class="ml-4 inline-flex items-center justify-center rounded p-2 text-surface-50 hover:bg-white/10"
+											class="ml-4 inline-flex items-center justify-center rounded p-2 text-surface-900 hover:bg-white/10"
 											aria-label="Close menu"
 										>
 											<X width="40" height="40" />
@@ -184,16 +190,16 @@
 <div class="mx-auto min-h-[90vh] w-full max-w-300 grow p-10 py-20">
 	{@render children?.()}
 </div>
-<div class="flex min-h-30 w-full flex-wrap gap-10 bg-surface-700 p-10">
+<!-- <div class="flex min-h-30 w-full flex-wrap gap-10 bg-surface-700 p-10">
 	<img
 		class="mx-auto h-20"
 		src={`${base}/images/ceresa-signature-inv.webp`}
 		alt="Signatura di Alice Ceresa"
 	/>
-</div>
-<div class="min-h-30 gap-10 bg-surface-700 p-10">
+</div> -->
+<div class="min-h-30 gap-10 bg-surface-200 border-t-6 border-t-secondary-500 p-10">
 	<div class="mx-auto w-full lg:max-w-6/10">
-		<p class="text-center text-surface-300">{m.green_moving_snake_gaze()}:</p>
+		<p class="text-center text-surface-800">{m.green_moving_snake_gaze()}:</p>
 		<div class="mt-20 flex flex-wrap justify-around gap-10">
 			<div class="">
 				<img

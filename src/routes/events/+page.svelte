@@ -17,7 +17,7 @@
 	<li class="mb-15">
 		<span class="date">{m.aware_key_wallaby_walk()}</span><br />
 		<span class="title">{m.orange_swift_hyena_trim()}</span><br />
-		Workshop<br />
+		{m.warm_bland_pony_flop()}<br />
 	</li>
 
 	<li class="mb-15">

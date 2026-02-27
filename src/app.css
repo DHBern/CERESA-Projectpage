@@ -10,6 +10,9 @@
 @import '../theme_ceresa';
 
 
+*:focus {
+    @apply ring-2 ring-secondary-200;
+    outline: none; /* Overwrite default focus-marker */}
 h1 {
     @apply mb-10 mt-15
 }
