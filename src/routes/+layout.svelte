@@ -58,11 +58,11 @@
 								<Portal>
 									<Menu.Positioner>
 										<Menu.Content
-											class="mt-1 rounded-none border-0 bg-secondary-300 p-0 py-2 text-lg"
+											class="mt-1 rounded-none border-0 bg-secondary-300  text-surface-800 p-0 py-2 text-lg"
 										>
 											{#each contents as content, idx}
 												<a href={content.slug}>
-													<Menu.Item value={`i_${idx}`} class="px-4">
+													<Menu.Item value={`i_${idx}`} class="px-4 hover:bg-secondary-500">
 														<Menu.ItemText>{@html content.name}</Menu.ItemText>
 													</Menu.Item>
 												</a>
