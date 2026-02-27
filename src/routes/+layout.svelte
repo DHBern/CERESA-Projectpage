@@ -58,7 +58,7 @@
 								<Portal>
 									<Menu.Positioner>
 										<Menu.Content
-											class="mt-1 rounded-none border-0 bg-secondary-50 p-0 py-2 text-lg"
+											class="mt-1 rounded-none border-0 bg-secondary-300 p-0 py-2 text-lg"
 										>
 											{#each contents as content, idx}
 												<a href={content.slug}>
