@@ -20,9 +20,9 @@
 
 <!-- Menu -->
 <AppBar
-	class="flex items-center justify-around gap-10 bg-primary-500 p-2 py-0 text-lg text-surface-200"
+	class="m-0 p-0 flex items-center justify-around gap-10 bg-primary-500 py-0 text-lg text-surface-200"
 >
-	<AppBar.Toolbar class="flex my-1">
+	<AppBar.Toolbar class="flex m-0 p-0 my-1 w-full max-w-350">
 		<!-- Logo / Home -->
 		<AppBar.Lead class="m-0 flex items-center p-0">
 			<!-- <a href={`${base}/.`}
@@ -35,10 +35,10 @@
 		</AppBar.Lead>
 
 		<!-- Top Navigation Bar -->
-		<AppBar.Headline class="m-0 w-full">
+		<AppBar.Headline class="m-0 w-full p-5">
 			<nav class="">
 				<ul
-					class="my-8{m.north_glad_slug_learn()} hidden w-full items-start gap-x-12 gap-y-6 text-lg text-surface-50 lg:flex lg:flex-wrap lg:justify-between"
+					class="my-8 hidden w-full items-start gap-x-12 gap-y-6 text-lg text-surface-50 lg:flex lg:flex-wrap lg:justify-between"
 				>
 					{#snippet menuItemTopDropdown(name, contents)}
 						<li
