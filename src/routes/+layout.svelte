@@ -128,7 +128,7 @@
 							>
 								<!-- Top bar with title and close in top-right -->
 								<div class="flex items-center justify-between">
-									<Dialog.Title class="text-lg font-semibold">Menu</Dialog.Title>
+									<Dialog.Title class="text-lg font-semibold">{m.wild_weary_hound_fry()}</Dialog.Title>
 
 									<div class="flex">
 										<button
@@ -165,7 +165,7 @@
 										{/snippet}
 
 										{@render menuItemSmallH1('Home', `${base}/`)}
-										{@render menuItemSmallH1(m.fresh_sad_lemur_achieve(), `${base}/project2`)}
+										{@render menuItemSmallH1(m.fresh_sad_lemur_achieve(), `${base}/project`)}
 										{@render menuItemSmallH1('Arcipelago Ceresa', `${base}/project`, 'H2')}
 										{@render menuItemSmallH1(
 											m.north_glad_slug_learn(),

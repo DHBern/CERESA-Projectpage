@@ -10,7 +10,7 @@
 		<img
 			src={`${base}/images/ceresa-autoritratto-transparent.webp`}
 			alt=""
-			class="mx-auto max-w-100"
+			class="my-1 w-full max-w-100 mx-auto"
 		/>
 		<figcaption class="text-md text-center">{m.bald_tame_sawfish_dig()}</figcaption>
 	</figure>

@@ -12,7 +12,7 @@
 {@html m.project_description_text()}
 <figure class="my-15">
 	<img
-		class="my-1 h-120"
+		class="my-1 w-full max-w-200"
 		src={`${base}/images/ceresa-cane.webp`}
 		alt={m.weak_arable_skate_clip()}
 	/>

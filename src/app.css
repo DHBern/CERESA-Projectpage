@@ -9,6 +9,10 @@
 @import '@skeletonlabs/skeleton/themes/wintry';
 @import '../theme_ceresa';
 
+@theme {
+    --breakpoint-sm: 800px;
+}
+
 *:focus {
     @apply ring-2 ring-secondary-200;
     outline: none; /* Overwrite default focus-marker */}
@@ -28,5 +32,5 @@ h2 {
 }
 
 p {
-    @apply mb-5 text-justify bg-none text-surface-950;
+    @apply mb-5 bg-none text-surface-950;
 }
