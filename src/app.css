@@ -14,14 +14,14 @@
 }
 
 *:focus {
-    @apply ring-2 ring-secondary-200;
+    @apply ring-2 ring-secondary-200-800;
     outline: none; /* Overwrite default focus-marker */}
 body {
-    @apply bg-surface-50;
+    @apply bg-surface-50-950;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    @apply text-surface-950;
+h1, h2, h3, h4, h5, h6 {
+    @apply text-surface-950-50;
 }
 
 h1 {
@@ -32,5 +32,5 @@ h2 {
 }
 
 p {
-    @apply mb-5 bg-none text-surface-950;
+    @apply mb-5 bg-none text-surface-950-50;
 }

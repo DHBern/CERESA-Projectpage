@@ -8,9 +8,7 @@
 </ul>
 
 <h2 class="h2">{m.solid_flaky_shrimp_intend()}</h2>
-<p>Test0</p>
 <ul class="eventlist">
-	<p>Test1</p>
 	<li class="mb-15">
 		<span class="date">{m.true_acidic_gecko_dart()}</span><br />
 		<span class="title">Alice Ceresa and Gerold Späth: Translation in Dialogue</span><br />
@@ -18,7 +16,6 @@
 		Workshop Dialogue, Polyphony, and Exchange in World Literatures<br />
 		{m.weary_white_platypus_wish()}
 	</li>
-	<p>Test2</p>
 
 	<li class="mb-15">	
 		<span class="date">{m.noble_game_jannes_dig()}</span><br />
@@ -57,10 +54,14 @@
 		{m.uni_siviglia()}
 	</li>
 </ul>
-<p>Test3</p>
 
 <style>
 	@reference "tailwindcss";
+	@reference "@skeletonlabs/skeleton";
+
+	/* .eventlist {
+		@apply text-surface-950-50;
+	} */
 	.eventlist :global(.title) {
 		@apply text-2xl font-bold italic;
 	}
