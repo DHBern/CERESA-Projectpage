@@ -8,7 +8,9 @@
 </ul>
 
 <h2 class="h2">{m.solid_flaky_shrimp_intend()}</h2>
+<p>Test0</p>
 <ul class="eventlist">
+	<p>Test1</p>
 	<li class="mb-15">
 		<span class="date">{m.true_acidic_gecko_dart()}</span><br />
 		<span class="title">Alice Ceresa and Gerold Späth: Translation in Dialogue</span><br />
@@ -16,20 +18,14 @@
 		Workshop Dialogue, Polyphony, and Exchange in World Literatures<br />
 		{m.weary_white_platypus_wish()}
 	</li>
+	<p>Test2</p>
 
 	<li class="mb-15">	
 		<span class="date">{m.noble_game_jannes_dig()}</span><br />
 		<span class="title">Workshop Named Entities in Digital Editions: Between Structured Databases and Context-Specific Annotation</span><br />
 		{m.UZH()}<br />
-	</li>
-
-	<li class="mb-15">
-		<span class="date">{m.noble_game_jannes_dig()}</span><br />
-		<span class="title">{m.helpful_clear_gopher_cure()}</span><br />
-		{m.UZH()}<br />
 		<a href="https://www.zde.uzh.ch/de/openeditions/entities.html" target="_blank" rel="noopener noreferrer">https://www.zde.uzh.ch/de/openeditions/entities.html</a>
 	</li>
-
 
 	<li class="mb-15">
 		<span class="date">{m.sound_soft_gazelle_splash()}</span><br />
@@ -61,11 +57,12 @@
 		{m.uni_siviglia()}
 	</li>
 </ul>
+<p>Test3</p>
 
 <style>
 	@reference "tailwindcss";
 	.eventlist :global(.title) {
-		@apply text-2xl font-bold;
+		@apply text-2xl font-bold italic;
 	}
 
 	.eventlist :global(.date) {
