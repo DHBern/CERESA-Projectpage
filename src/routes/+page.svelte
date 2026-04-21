@@ -4,7 +4,7 @@
 </script>
 <div class="lg:absolute lg:left-20 lg:w-6/10">
 	<h1 class="text-5xl lg:text-8xl font-bold text-primary-500 w-full">{m.drab_aware_grizzly_inspire()}</h1>
-	<h2 class="text-xl lg:text-3xl font-bold text-surface-900 p-4 lg:p-12 lg:max-w-[50vw] bg-secondary-500">{m.mellow_stock_bobcat_clap()}</h2>
+	<h2 class="text-xl lg:text-3xl font-bold text-surface-900-100 p-4 lg:p-12 lg:max-w-[50vw] bg-secondary-500">{m.mellow_stock_bobcat_clap()}</h2>
 </div>
 <div class="lg:mt-150 bg-white p-5 lg:p-20 text-lg:text-2xl">
 	{@html m.home()}
