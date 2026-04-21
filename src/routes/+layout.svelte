@@ -20,7 +20,7 @@
 
 <!-- Menu -->
 <AppBar
-	class="m-0 p-0 flex items-center justify-around gap-10 bg-primary-500 py-0 text-lg text-surface-200"
+	class="m-0 p-0 flex items-center justify-around gap-10 bg-primary-500 py-0 text-lg text-surface-200-800"
 >
 	<AppBar.Toolbar class="flex m-0 p-0 my-1 w-full max-w-350">
 		<!-- Logo / Home -->
@@ -38,7 +38,7 @@
 		<AppBar.Headline class="m-0 w-full p-5">
 			<nav class="">
 				<ul
-					class="my-8 hidden w-full items-start gap-x-12 gap-y-6 text-lg text-surface-50 lg:flex lg:flex-wrap lg:justify-between"
+					class="my-8 hidden w-full items-start gap-x-12 gap-y-6 text-lg text-surface-50-950 lg:flex lg:flex-wrap lg:justify-between"
 				>
 					{#snippet menuItemTopDropdown(name, contents)}
 						<li
@@ -58,7 +58,7 @@
 								<Portal>
 									<Menu.Positioner>
 										<Menu.Content
-											class="mt-1 rounded-none border-0 bg-secondary-300  text-surface-800 p-0 py-2 text-lg"
+											class="mt-1 rounded-none border-0 bg-secondary-300  text-surface-800-200 p-0 py-2 text-lg"
 										>
 											{#each contents as content, idx}
 												<a href={content.slug}>
@@ -115,16 +115,16 @@
 			<div class="flex w-full justify-end lg:hidden">
 				<Dialog open={openStateMenu} onOpenChange={(e) => (openStateMenu = e.open)}>
 					<Dialog.Trigger
-						class="ml-4 inline-flex items-center justify-center rounded p-2 text-surface-50 hover:bg-white/10"
+						class="ml-4 inline-flex items-center justify-center rounded p-2 text-surface-50-950 hover:bg-white/10"
 					>
-						<Hamburger class="text-surface-50" width="40" height="40" />
+						<Hamburger class="text-surface-50-950" width="40" height="40" />
 					</Dialog.Trigger>
 
 					<Portal>
-						<Dialog.Backdrop class="fixed inset-0 z-50 bg-black/50" />
+						<Dialog.Backdrop class="fixed inset-0 z-50 bg-surface-950-50/50" />
 						<Dialog.Positioner class="fixed inset-0 z-50">
 							<Dialog.Content
-								class="relative h-full w-screen overflow-auto bg-secondary-200 p-3 text-surface-900"
+								class="relative h-full w-screen overflow-auto bg-secondary-200 p-3 text-surface-900-100"
 							>
 								<!-- Top bar with title and close in top-right -->
 								<div class="flex items-center justify-between">
@@ -139,7 +139,7 @@
 										>
 										<!-- Close button top-right -->
 										<Dialog.CloseTrigger
-											class="ml-4 inline-flex items-center justify-center rounded p-2 text-surface-900 hover:bg-white/10"
+											class="ml-4 inline-flex items-center justify-center rounded p-2 text-surface-900-100 hover:bg-white/10"
 											aria-label="Close menu"
 										>
 											<X width="40" height="40" />
@@ -190,16 +190,16 @@
 <div class="mx-auto min-h-[90vh] w-full max-w-350 grow p-10 py-20">
 	{@render children?.()}
 </div>
-<!-- <div class="flex min-h-30 w-full flex-wrap gap-10 bg-surface-700 p-10">
+<!-- <div class="flex min-h-30 w-full flex-wrap gap-10 bg-surface-700-300 p-10">
 	<img
 		class="mx-auto h-20"
 		src={`${base}/images/ceresa-signature-inv.webp`}
 		alt="Signatura di Alice Ceresa"
 	/>
 </div> -->
-<div class="min-h-30 gap-0 bg-surface-200 border-t-6 border-t-secondary-500 p-8">
+<div class="min-h-30 gap-0 bg-surface-200-800 border-t-6 border-t-secondary-500 p-8">
 	<div class="mx-auto w-full lg:max-w-6/10">
-		<p class="text-center text-surface-800">{m.green_moving_snake_gaze()}:</p>
+		<p class="text-center text-surface-800-200">{m.green_moving_snake_gaze()}:</p>
 		<div class="mt-3 flex flex-wrap justify-around gap-10">
 			<div class="">
 				<img
